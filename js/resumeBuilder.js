@@ -14,13 +14,20 @@ This is empty on purpose! Your code to build the resume will go here.
 // //Appending fun thought to the page
 // $("#main").append(funThoughts);
 
-var name = "Itrat Rahman"
+// var name = "Itrat Rahman"
 
-var formattedName = HTMLheaderName.replace("%data%", name);
+// var formattedName = HTMLheaderName.replace("%data%", name);
 
-var role = "Software Engineer"
+// var role = "Software Engineer"
 
-var formattedRole = HTMLheaderRole.replace("%data%", role)
+// var formattedRole = HTMLheaderRole.replace("%data%", role)
 
-$("#header").prepend(formattedRole)
-$("#header").prepend(formattedName)
+// $("#header").prepend(formattedRole)
+// $("#header").prepend(formattedName)
+
+var skills = ["awesomeness", "programming", "teaching", "JS"]
+
+// $("#main").append(skills);
+// $("#main").append(skills[0]);
+
+$("#main").append(skills.length);
