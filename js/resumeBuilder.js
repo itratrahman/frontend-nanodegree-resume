@@ -32,79 +32,102 @@ This is empty on purpose! Your code to build the resume will go here.
 
 // $("#main").append(skills.length);
 
-// var bio = {
+var bio = {
 
-//     "name": "Itrat Rahman",
-//     "role": "Software Engineer",
-//     "contacts": {
-//         "mobile": "01788995566",
-//         "email": "rahmanitrat@gmail.com",
-//         "github": "itratrahman",
-//         "location": "Dhaka"
-//     },
-//     "welcomeMessage": "Hello Everyone, this is Itrat",
-//     "skills": ["awesomeness", "programming", "teaching", "JS"],
-//     "bioPic": "images/fry.jpg"
+    "name": "Itrat Rahman",
+    "role": "Software Engineer",
+    "contacts": {
+        "mobile": "01788995566",
+        "email": "rahmanitrat@gmail.com",
+        "github": "itratrahman",
+        "location": "Dhaka"
+    },
+    "welcomeMessage": "Hello Everyone, this is Itrat",
+    "skills": ["awesomeness", "programming", "teaching", "JS"],
+    "bioPic": "images/fry.jpg"
 
-// };
+};
 
-// var formattedName = HTMLheaderName.replace("%data%", bio.name)
-// var formattedRole = HTMLheaderRole.replace("%data%", bio.role)
+var formattedName = HTMLheaderName.replace("%data%", bio.name)
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role)
 // var formattedMobile = HTMLmobile.replace("%data%", bio["contacts"].mobile)
 // var formattedEmail = HTMLemail.replace("%data%", bio["contacts"].email)
 // var formattedGithub = HTMLgithub.replace("%data%", bio["contacts"].github)
 // var formattedLocation = HTMLlocation.replace("%data%", bio["contacts"].location)
-// var formattedBioPic = HTMLbioPic.replace("%data%", bio["bioPic"])
-// var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage)
+var formattedBioPic = HTMLbioPic.replace("%data%", bio["bioPic"])
+var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage)
 // var formattedSkills1 = HTMLskills.replace("%data%", bio.skills[0])
 // var formattedSkills2 = HTMLskills.replace("%data%", bio.skills[1])
 // var formattedSkills3 = HTMLskills.replace("%data%", bio.skills[2])
 // var formattedSkills4 = HTMLskills.replace("%data%", bio.skills[3])
 
 
-// $("#header").prepend(formattedRole)
-// $("#header").prepend(formattedName)
+$("#header").prepend(formattedRole)
+$("#header").prepend(formattedName)
 // $("#header").append(formattedMobile)
 // $("#header").append(formattedEmail)
 // $("#header").append(formattedGithub)
 // $("#header").append(formattedLocation)
-// $("#header").append(formattedBioPic)
-// $("#header").append(formattedWelcomeMsg)
+$("#header").append(formattedBioPic)
+$("#header").append(formattedWelcomeMsg)
 // $("#header").append(HTMLskillsStart)
 // $("#header").append(formattedSkills1)
 // $("#header").append(formattedSkills2)
 // $("#header").append(formattedSkills3)
 // $("#header").append(formattedSkills4)
 
-// var education = {
+var education = {
 
-//     "schools": [
-//     {
-//         "name": "Univeristy College London",
-//         "location": "London",
-//         "degree": "Masters",
-//         "majors": ["EE"],
-//         "dates": 2015,
-//         "url": "http://176.32.230.23/itratrahman.com/"
-//     },
-//     {
-//         "name": "Univeristy College London",
-//         "location": "London",
-//         "degree": "Bachelors",
-//         "majors": ["EE"],
-//         "dates": 2014,
-//         "url": "http://176.32.230.23/itratrahman.com/"
-//     }
-//     ],
+    "schools": [
+    {
+        "name": "Univeristy College London",
+        "location": "London",
+        "degree": "Masters",
+        "majors": ["EE"],
+        "dates": 2015,
+        "url": "http://176.32.230.23/itratrahman.com/"
+    },
+    {
+        "name": "Univeristy College London",
+        "location": "London",
+        "degree": "Bachelors",
+        "majors": ["EE"],
+        "dates": 2014,
+        "url": "http://176.32.230.23/itratrahman.com/"
+    }
+    ],
 
-//     "onlineCourses": [
-//     {
-//         "title": "JavaScript Syntax",
-//         "school": "Udacity",
-//         "dates": 2017,
-//         "url": "https://www.udacity.com/"
-//     }
+    "onlineCourses": [
+    {
+        "title": "JavaScript Syntax",
+        "school": "Udacity",
+        "dates": 2017,
+        "url": "https://www.udacity.com/"
+    }
 
-//     ]
+    ]
 
-// }
+}
+
+if(bio.skills.length > 0){
+
+    $("#header").append(HTMLskillsStart)
+
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0])
+
+    $("#skills").append(formattedSkill)
+
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[1])
+
+    $("#skills").append(formattedSkill)
+
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[2])
+
+    $("#skills").append(formattedSkill)
+
+    var formattedSkill = HTMLskills.replace("%data%", bio.skills[3])
+
+    $("#skills").append(formattedSkill)
+
+
+}
