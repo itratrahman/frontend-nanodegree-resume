@@ -75,3 +75,36 @@ $("#header").append(formattedSkills1)
 $("#header").append(formattedSkills2)
 $("#header").append(formattedSkills3)
 $("#header").append(formattedSkills4)
+
+var education = {
+
+    "schools": [
+    {
+        "name": "Univeristy College London",
+        "location": "London",
+        "degree": "Masters",
+        "majors": ["EE"],
+        "dates": 2015,
+        "url": "http://176.32.230.23/itratrahman.com/"
+    },
+    {
+        "name": "Univeristy College London",
+        "location": "London",
+        "degree": "Bachelors",
+        "majors": ["EE"],
+        "dates": 2014,
+        "url": "http://176.32.230.23/itratrahman.com/"
+    }
+    ],
+
+    "onlineCourses": [
+    {
+        "title": "JavaScript Syntax",
+        "school": "Udacity",
+        "dates": 2017,
+        "url": "https://www.udacity.com/"
+    }
+
+    ]
+
+}
