@@ -188,26 +188,35 @@ work = {
 };
 
 
-for (job in work.jobs){
+function displayWork(){
+
+
+    for (job in work.jobs){
 
     //Create a new div for work experience
-    $("#workExperience").append(HTMLworkStart);
+        $("#workExperience").append(HTMLworkStart);
 
-    //Concat employer and title
-    var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+        //Concat employer and title
+        var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 
-    var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+        var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 
-    var formattedEmployerTitle = formattedEmployer + formattedTitle;
+        var formattedEmployerTitle = formattedEmployer + formattedTitle;
 
-    $(".work-entry:last").append(formattedEmployerTitle);
+        $(".work-entry:last").append(formattedEmployerTitle);
 
-    var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+        var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 
-    $(".work-entry:last").append(formattedDates);
+        $(".work-entry:last").append(formattedDates);
 
-    var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 
-    $(".work-entry:last").append(formattedDescription);
+        $(".work-entry:last").append(formattedDescription);
+
+    }
 
 }
+
+displayWork();
+
+
