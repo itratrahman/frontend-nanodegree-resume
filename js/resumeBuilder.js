@@ -48,28 +48,28 @@ var bio = {
 
 };
 
-var formattedName = HTMLheaderName.replace("%data%", bio.name)
-var formattedRole = HTMLheaderRole.replace("%data%", bio.role)
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 // var formattedMobile = HTMLmobile.replace("%data%", bio["contacts"].mobile)
 // var formattedEmail = HTMLemail.replace("%data%", bio["contacts"].email)
 // var formattedGithub = HTMLgithub.replace("%data%", bio["contacts"].github)
 // var formattedLocation = HTMLlocation.replace("%data%", bio["contacts"].location)
-var formattedBioPic = HTMLbioPic.replace("%data%", bio["bioPic"])
-var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage)
+var formattedBioPic = HTMLbioPic.replace("%data%", bio["bioPic"]);
+var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 // var formattedSkills1 = HTMLskills.replace("%data%", bio.skills[0])
 // var formattedSkills2 = HTMLskills.replace("%data%", bio.skills[1])
 // var formattedSkills3 = HTMLskills.replace("%data%", bio.skills[2])
 // var formattedSkills4 = HTMLskills.replace("%data%", bio.skills[3])
 
 
-$("#header").prepend(formattedRole)
-$("#header").prepend(formattedName)
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
 // $("#header").append(formattedMobile)
 // $("#header").append(formattedEmail)
 // $("#header").append(formattedGithub)
 // $("#header").append(formattedLocation)
-$("#header").append(formattedBioPic)
-$("#header").append(formattedWelcomeMsg)
+$("#header").append(formattedBioPic);
+$("#header").append(formattedWelcomeMsg);
 // $("#header").append(HTMLskillsStart)
 // $("#header").append(formattedSkills1)
 // $("#header").append(formattedSkills2)
@@ -107,7 +107,7 @@ var education = {
 
     ]
 
-}
+};
 
 if(bio.skills.length > 0){
 
@@ -130,4 +130,37 @@ if(bio.skills.length > 0){
     $("#skills").append(formattedSkill)
 
 
+};
+
+
+var cameron = {};
+
+cameron.job = "course dev";
+
+var makeCourse = function(){
+
+    //make a course
+    console.log("Made a course");
+}
+
+var courses = 0;
+
+while(cameron.job == "course dev"){
+
+    makeCourse();
+
+    courses = courses + 1;
+
+    if(courses === 10){
+
+        cameron.job = "learning specialist";
+
+    }
+}
+
+console.log(cameron.job);
+
+for(var i=0; i<9; i++){
+
+    console.log(i);
 }
