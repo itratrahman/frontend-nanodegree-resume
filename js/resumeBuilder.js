@@ -111,56 +111,47 @@ var education = {
 
 if(bio.skills.length > 0){
 
-    $("#header").append(HTMLskillsStart)
+    $("#header").append(HTMLskillsStart);
 
-    var formattedSkill = HTMLskills.replace("%data%", bio.skills[0])
+    for (skill in bio.skills){
 
-    $("#skills").append(formattedSkill)
+        var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
 
-    var formattedSkill = HTMLskills.replace("%data%", bio.skills[1])
+        $("#skills").append(formattedSkill);
 
-    $("#skills").append(formattedSkill)
-
-    var formattedSkill = HTMLskills.replace("%data%", bio.skills[2])
-
-    $("#skills").append(formattedSkill)
-
-    var formattedSkill = HTMLskills.replace("%data%", bio.skills[3])
-
-    $("#skills").append(formattedSkill)
-
+    }
 
 };
 
 
-var cameron = {};
+// var cameron = {};
 
-cameron.job = "course dev";
+// cameron.job = "course dev";
 
-var makeCourse = function(){
+// var makeCourse = function(){
 
-    //make a course
-    console.log("Made a course");
-}
+//     //make a course
+//     console.log("Made a course");
+// }
 
-var courses = 0;
+// var courses = 0;
 
-while(cameron.job == "course dev"){
+// while(cameron.job == "course dev"){
 
-    makeCourse();
+//     makeCourse();
 
-    courses = courses + 1;
+//     courses = courses + 1;
 
-    if(courses === 10){
+//     if(courses === 10){
 
-        cameron.job = "learning specialist";
+//         cameron.job = "learning specialist";
 
-    }
-}
+//     }
+// }
 
-console.log(cameron.job);
+// console.log(cameron.job);
 
-for(var i=0; i<9; i++){
+// for(var i=0; i<9; i++){
 
-    console.log(i);
-}
+//     console.log(i);
+// }
